@@ -1,0 +1,11 @@
+{
+  "name": "bootcamp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lubotajoao/Bootcamp-GoStack-RocketSeat.git",
+  "author": "Lubota Ngola Joao <lubota4@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
