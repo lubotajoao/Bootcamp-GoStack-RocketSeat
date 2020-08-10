@@ -1,19 +1,24 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {View, Text, StyleSheet, StatusBar} from 'react-native';
 
-// Nenhum elemento () tem valor semantico (significado)
-// Nenhum elemento possue estilização própria
-// Todos componentes possuem por padrão "display: flex"
-
-// View: representa -> div, footer, header, main, aside, section, etc
-// Text: p, span, strong, h1, h2, h3
+import api from './services/api';
 
 export default function App() {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    api.get('projects').then((response) => {
+      setProjects(response.data);
+    });
+  }, []);
+
   return (
     <>
       <StatusBar barStyle="default" backgroundColor="#7159C1" />
       <View style={styles.container}>
-        <Text style={styles.title}>Salut le monde!!!</Text>
+        {projects.map((project) => (
+          <Text key={project.id}>{project.title}</Text>
+        ))}
       </View>
     </>
   );
