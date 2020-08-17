@@ -41,8 +41,13 @@ Serão abordados a maioria dos conceitos iniciais do NodeJS, ReactJS e React Nat
 
 - **DIP (Dependency Inversion Principle):** Esse princípio zela que uma entidade dependa apenas de abstrações, não de implementações. Exemplo: Ao atribuir ao Repository a comunicação com o Banco de dados, o Service precisa interagir apenas com essa abstração, sem precisar criar uma nova instância e realizar as ações diretamente.
 
-## **Bibliotecas Utilizadas**
+### **Bibliotecas Utilizadas**
 
 - **express:** para gerenciamento de rotas.
 - **uuid:** para criação aleatória do ID.
 - **date-fns:** para lidar com a tratativa de data e hora.
+
+## **Iniciando o Back-end do App**
+
+Nesta etapa continuamos o aprendizado com NodeJS, com os conhecimentos adquiridos até agora, ampliamos os estudos com os conceitos de banco de dados, autenticação, autorização, etc.
+
