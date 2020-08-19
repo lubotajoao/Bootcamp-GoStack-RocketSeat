@@ -1,9 +1,14 @@
 {
   "cSpell.words": [
+    "database",
     "docker",
     "gobarber",
     "gostack",
     "gostack gobarber",
-    "postgres"
+    "migrations",
+    "postgres",
+    "src",
+    "src database migrations ts",
+    "ts"
   ]
 }
