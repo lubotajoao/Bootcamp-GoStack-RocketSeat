@@ -4,9 +4,8 @@ import {
   TableColumn,
   TableForeignKey,
 } from 'typeorm';
-import { QueryExpressionMap } from 'typeorm/query-builder/QueryExpressionMap';
 
-export default class AlterProviderFieldToProviderId1598096297637
+export default class AlterProviderFieldToProviderId1597997497755
   implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.dropColumn('appointments', 'provider');
@@ -25,8 +24,8 @@ export default class AlterProviderFieldToProviderId1598096297637
       new TableForeignKey({
         name: 'AppointmentProvider',
         columnNames: ['provider_id'],
-        referencedColumnNames: ['id'],
         referencedTableName: 'users',
+        referencedColumnNames: ['id'],
         onDelete: 'SET NULL',
         onUpdate: 'CASCADE',
       }),
