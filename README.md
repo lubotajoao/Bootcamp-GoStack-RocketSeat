@@ -2,18 +2,18 @@
 
 ## **Conceitos NodeJS e TypeScript**
 
-Serão abordados a maioria dos conceitos iniciais do NodeJS, ReactJS e React Native. Será construída a primeira aplicação integrando as três ferramentas (Node.JS, ReactJS e React Native). Será visto também o conceito  de tipagem no JavaScript, utilizando o TypeScript.
+Serão abordados a maioria dos conceitos iniciais do NodeJS, ReactJS e React Native. Será construída a primeira aplicação integrando as três ferramentas (Node.JS, ReactJS e React Native). Será visto também o conceito de tipagem no JavaScript, utilizando o TypeScript.
 
 ## **Primeiro Projeto com NodeJS**
 
 **Configuração do projeto do total zero utilizando NodeJS e TypeScript incluindo ferramentas como:**
 
 - **EditorConfig:** Padronização de configuração para vários desenvolvedores que trabalham em um mesmo projeto, com diferentes editores de código ou IDE's e com diferentes sistemas operacionais (GNU/Linux, MacOS ou Windows).
-  
+
 - **ts-node-dev** (com as suas exceções para tornar a transpilação mais rápida no momento de desenvolvimento da aplicação);
-  
+
 - **ESLint:** Utilizado para automatização padronizado do código, seguindo modelo popular do Airbnb;
-  
+
 - **Prettier:** Ferramenta complementar para padronização de código, como adição de ponto e vírgula no final das linhas, quebra de linha (+80 caracteres), etc;
 
 ### **Conceitos Abordados**
@@ -24,16 +24,19 @@ Serão abordados a maioria dos conceitos iniciais do NodeJS, ReactJS e React Nat
 
 - **Model** ou **Entidade:** Estrutura de persistência de dados da aplicação "em algum lugar (banco de dados ou em memória".
 
-- **Repositório:** Que trabalha com os dados  persistidos pelo **Model**. Consiste em uma ponte entre a aplicação e a fonte de dados, e executa métodos como listagem, busca, criação, edição, remoção, etc.
+- **Repositório:** Que trabalha com os dados persistidos pelo **Model**. Consiste em uma ponte entre a aplicação e a fonte de dados, e executa métodos como listagem, busca, criação, edição, remoção, etc.
+
+- **Migration:** Controlam o versionamento do banco de dados, entre diferentes ambientes de desenvolvimento.
 
 - **DTO - Data Transfer Object:** Para transmitir dados de um arquivo para outro, é recomendável utilizar objeto no JavaScript.
-  
+
   - Na utilização do conceito DTO, faz-se necessário tornar **parâmetros nomeados** através da desestruturação (objetos manipuláveis).
-  
+
 - **Omit**<key, object>: Para excluir uma propriedade de dentro deu um tipo. Define a imutabilidade externa do objeto, ou seja, todos os outros dados podem vir externamente, excepto o objeto especificado.
 
 - **Service:** Armazena a regra de negócio da aplicação, abstraíndo regras de negócio das rotas. O service deve possuir apenas um método (ex.: execute(), run(), etc.) e tem um nome descritivo.
-  - O **service** nunca tem acesso as requisições e respostas.
+
+  - O **service** nunca tem acesso às requisições e respostas.
 
 - **DRY (Don't Repeat Yourself):** Esse princípio zela pelo maior reaproveitamento de código. Esse princípio não preza necessariamente pela não-repetição de código e sim regras de negócio. Exemplo: ao criar Services e Repositories, você possibilita a reutilização desses códigos no restante da aplicação.
 
@@ -51,3 +54,23 @@ Serão abordados a maioria dos conceitos iniciais do NodeJS, ReactJS e React Nat
 
 Nesta etapa continuamos o aprendizado com NodeJS, com os conhecimentos adquiridos até agora, ampliamos os estudos com os conceitos de banco de dados, autenticação, autorização, etc.
 
+### **Conceitos Abordados**
+
+- **Cardinalidade de Entidades:**
+- **Relacionamento de Entidades:**
+- **KISS (Keep It Simple & Stupid):**
+
+### **Bibliotecas Utilizadas**
+
+- **express:** para gerenciamento de rotas.
+- **uuid:** para criação aleatória do ID.
+- **date-fns:** para lidar com a tratativa de data e hora.
+- **typeORM:** (Object Relational Mapping) framework de mapeamento de entidades e tabelas de banco de dado.
+- **pg:** biblioteca (driver) TypeORM para o banco relacional Postgres.
+- **reflect-metadata:** para lidar com a tratativa de dados com TypeORM (decorators).
+- **bcryptjs:** biblioteca de criptografia.
+- **jsonwebtoken:** para geração do token para autenticação do usuário.
+- **multer (express):** middleware para tratar uploads de arquivos.
+- **crypto:** para gerar hash, criptografia, etc.
+- **fs:** file system do nodejs.
+- **express-async-error:** 
