@@ -56,9 +56,9 @@ Nesta etapa continuamos o aprendizado com NodeJS, com os conhecimentos adquirido
 
 ### **Conceitos Abordados**
 
-- **Cardinalidade de Entidades:**
-- **Relacionamento de Entidades:**
-- **KISS (Keep It Simple & Stupid):**
+- **Cardinalidade de Entidades**
+- **Relacionamento de Entidades**
+- **KISS (Keep It Simple & Stupid)**
 
 ### **Bibliotecas Utilizadas**
 
@@ -73,4 +73,4 @@ Nesta etapa continuamos o aprendizado com NodeJS, com os conhecimentos adquirido
 - **multer (express):** middleware para tratar uploads de arquivos.
 - **crypto:** para gerar hash, criptografia, etc.
 - **fs:** file system do nodejs.
-- **express-async-error:** 
+- **express-async-error:** trata erros do express async middleware.
