@@ -20,7 +20,13 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "react-hooks"],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "react-hooks",
+    "@typescript-eslint",
+    "prettier"
+  ],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
@@ -28,6 +34,12 @@
       1,
       {
         "extensions": [".tsx"]
+      }
+    ],
+    "@typescript-estlint/explicit-function-return-type": [
+      "error",
+      {
+        "allowExpressions": true
       }
     ],
     "import/prefer-default-export": "off",
